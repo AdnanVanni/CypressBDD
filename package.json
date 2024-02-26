@@ -1,0 +1,22 @@
+{
+  "name": "vscodefolder",
+  "version": "1.0.0",
+  "description": "Using V",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=chrome",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=chrome --reporter=reporter.ts",
+    "tests:donate": "playwright test --config=e2e.config.ts --project=chrome --reporter=html",
+    "tests:api": "playwright test --config=api.config.ts --project=chrome --reporter=list"
+  },
+  "author": "Adnan Ali",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.5.0",
+    "@playwright/test": "^1.36.2",
+    "chai": "^4.3.8",
+    "cucumber-html-reporter": "^7.1.1",
+    "prettier": "^3.0.3"
+  }
+}
